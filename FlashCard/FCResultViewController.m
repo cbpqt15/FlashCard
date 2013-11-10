@@ -1,19 +1,19 @@
 //
-//  FCViewController.m
+//  FCResultViewController.m
 //  FlashCard
 //
 //  Created by Christoph on 10.11.13.
 //  Copyright (c) 2013 Christoph. All rights reserved.
 //
 
-#import "FCViewController.h"
+#import "FCResultViewController.h"
 
 
-@interface FCViewController ()
+@interface FCResultViewController ()
 
 @end
 
-@implementation FCViewController
+@implementation FCResultViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,12 +34,12 @@
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)showStates:(id)sender
+- (void)initWithGame
 {
     
 }
 
-- (IBAction)showCapitals:(id)sender
+- (IBAction)startAgain:(id)sender
 {
     
 }
