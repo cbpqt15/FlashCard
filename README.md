@@ -1,5 +1,4 @@
-#FlashCard
-=========
+## FlashCard
 
 FlashCard is an iOS app written in Objective-C. It's a practice project of mine to get some more experience with iOS Development. 
 
