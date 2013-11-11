@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="384" y="191"/>
         </scene>
-        <!--View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="UB8-8g-6oY">
             <objects>
-                <viewController id="wXY-6v-OqA" sceneMemberID="viewController">
+                <viewController id="wXY-6v-OqA" customClass="FCCardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9mg-hD-AYn"/>
                         <viewControllerLayoutGuide type="bottom" id="YI2-c4-nfF"/>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="767" y="191"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="RB7-vp-Ufn">
             <objects>
-                <viewController id="Mve-Mm-EZK" sceneMemberID="viewController">
+                <viewController id="Mve-Mm-EZK" customClass="FCResultViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mo1-qj-oLf"/>
                         <viewControllerLayoutGuide type="bottom" id="tY2-p3-OhK"/>
