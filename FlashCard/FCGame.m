@@ -10,4 +10,29 @@
 
 @implementation FCGame
 
+- (id)initWithcards:(NSMutableArray *)c
+{
+    
+}
+
+- (BOOL)hasMoreCards
+{
+    
+}
+
+- (FCCard *)getNextCard
+{
+    
+}
+
+- (int)getNumRight
+{
+    
+}
+
+- (int)getNumWrong
+{
+    
+}
+
 @end

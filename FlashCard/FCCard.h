@@ -10,4 +10,16 @@
 
 @interface FCCard : NSObject
 
+@property (nonatomic, assign) BOOL isCorrect;
+@property (nonatomic, strong) NSString *cardText;
+@property (nonatomic, strong) NSMutableArray *answers;
+@property (nonatomic) int correctAnswers;
+
+- (void)initWithQuestion:(NSString *)question
+                  answer: (NSString *)answer
+            wrongAnswer1: (NSString *)wrongAnswer1
+            wrongAnswer2: (NSString *)wrongAnswer2;
+
+- (void)recordAnswer:(int)answerNum;
+
 @end

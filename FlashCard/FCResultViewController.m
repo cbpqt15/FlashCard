@@ -34,7 +34,7 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)initWithGame
+- (id)initWithGame:(FCGame *)g;
 {
     
 }

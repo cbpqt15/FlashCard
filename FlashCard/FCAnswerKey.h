@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FCCard.h"
 
 @interface FCAnswerKey : NSObject
+
+- (NSMutableArray *) allocStateCards;
+- (NSMutableArray *) allocCapitalCards;
 
 @end

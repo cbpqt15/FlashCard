@@ -7,7 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FCCard.h"
+#import "FCAnswerKey.h"
 
 @interface FCGame : NSObject
+
+@property (nonatomic, strong) NSMutableArray *cards;
+@property (nonatomic) int currentCard;
+
+- (id)initWithcards:(NSMutableArray *)c;
+- (BOOL)hasMoreCards;
+- (FCCard *)getNextCard;
+- (int)getNumRight;
+- (int)getNumWrong;
 
 @end

@@ -35,6 +35,11 @@
     [super didReceiveMemoryWarning];
 }
 
+- (IBAction)showCards:(NSMutableArray *)cards
+{
+
+}
+
 - (IBAction)showStates:(id)sender
 {
     

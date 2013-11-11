@@ -34,12 +34,13 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)initWithGame
+
+- (id)initWithGame:(FCGame *)g
 {
     
 }
 
-- (IBAction)nextCard:(id)sender
+- (void)nextCard
 {
     
 }
@@ -48,4 +49,5 @@
 {
     
 }
+
 @end

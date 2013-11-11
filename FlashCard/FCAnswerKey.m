@@ -10,4 +10,14 @@
 
 @implementation FCAnswerKey
 
+- (NSMutableArray *) allocStateCards
+{
+    
+}
+
+- (NSMutableArray *) allocCapitalCards
+{
+    
+}
+
 @end
