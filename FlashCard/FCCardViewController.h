@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) FCResultViewController *resultVC;
 
-@property (nonatomic, strong) IBOutlet NSString *cardLabel;
+@property (nonatomic, strong) IBOutlet UILabel *cardLabel;
 @property (nonatomic, strong) IBOutlet UIButton *answerButton1;
 @property (nonatomic, strong) IBOutlet UIButton *answerButton2;
 @property (nonatomic, strong) IBOutlet UIButton *answerButton3;
