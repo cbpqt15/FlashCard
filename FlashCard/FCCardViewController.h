@@ -23,7 +23,7 @@
 @property (nonatomic, strong) FCGame *game;
 @property (nonatomic, strong) FCCard *currentCard;
 
-//- (id)initWithGame:(FCGame *)g;
+- (id)initWithGame:(FCGame *)g;
 - (void)nextCard;
 - (IBAction)answerButtonTouched:(id)sender;
 
