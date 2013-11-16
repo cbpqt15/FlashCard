@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -34,7 +34,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showStates:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AE5-MX-9QZ"/>
+                                    <action selector="showStates:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XLJ-uh-AzV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95P-dn-knI">
@@ -45,7 +45,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showCapitals:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gLj-nt-1Ws"/>
+                                    <action selector="showCapitals:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="J59-UN-sgD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,7 +69,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Baden-Württemberg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dm-2O-7xQ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dm-2O-7xQ">
                                 <rect key="frame" x="20" y="62" width="280" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -77,35 +77,50 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ql1-p2-aum">
-                                <rect key="frame" x="112" y="254" width="97" height="27"/>
+                                <rect key="frame" x="20" y="254" width="280" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="München">
+                                <state key="normal" title="answer1">
                                     <color key="titleColor" red="1" green="0.22745098173618317" blue="0.17647059261798859" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerButtonTouched:" destination="wXY-6v-OqA" eventType="touchUpInside" id="nfS-1Y-TbK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quf-oX-LHj">
-                                <rect key="frame" x="112" y="314" width="97" height="36"/>
+                                <rect key="frame" x="20" y="319" width="280" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Freiburg">
+                                <state key="normal" title="answer2">
                                     <color key="titleColor" red="1" green="0.2274509817" blue="0.1764705926" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerButtonTouched:" destination="wXY-6v-OqA" eventType="touchUpInside" id="NPe-95-HXY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiM-4F-13L">
-                                <rect key="frame" x="112" y="379" width="97" height="36"/>
+                                <rect key="frame" x="20" y="384" width="280" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Stuttgart">
+                                <state key="normal" title="answer3">
                                     <color key="titleColor" red="1" green="0.2274509817" blue="0.1764705926" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="answerButtonTouched:" destination="wXY-6v-OqA" eventType="touchUpInside" id="DJO-it-pR5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answerButton1" destination="Ql1-p2-aum" id="XJm-bR-UNC"/>
+                        <outlet property="answerButton2" destination="quf-oX-LHj" id="nDi-UP-YhS"/>
+                        <outlet property="answerButton3" destination="qiM-4F-13L" id="lyf-MQ-XtU"/>
+                        <outlet property="cardLabel" destination="2Dm-2O-7xQ" id="9s1-L2-rgj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4g-AC-377" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,6 +146,9 @@
                                     <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startAgain:" destination="Mve-Mm-EZK" eventType="touchUpInside" id="kOJ-XW-nZV"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="richtig" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBn-EE-nvf">
                                 <rect key="frame" x="163" y="150" width="85" height="32"/>
@@ -163,6 +181,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="numRightLabel" destination="kUX-k1-R3M" id="SxD-dX-n4R"/>
+                        <outlet property="numWrongLabel" destination="BcT-Cd-kNs" id="U1O-4H-kYK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ju8-Me-Af1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
