@@ -34,10 +34,10 @@
     [super didReceiveMemoryWarning];
 }
 
-- (id)initWithGame:(FCGame *)g;
-{
-    
-}
+//- (id)initWithGame:(FCGame *)g;
+//{
+//    
+//}
 
 - (IBAction)startAgain:(id)sender
 {

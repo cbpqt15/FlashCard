@@ -10,12 +10,16 @@
 #import "FCGame.h"
 
 @interface FCResultViewController : UIViewController
+{
+    UILabel *numRightLabel;
+    UILabel *numWrongLabel;
+}
 
 @property (nonatomic, strong) IBOutlet UILabel *numRightLabel;
 @property (nonatomic, strong) IBOutlet UILabel *numWrongLabel;
-@property (nonatomic, strong) FCGame *game;
-
-- (id)initWithGame:(FCGame *)g;
+//@property (nonatomic, strong) FCGame *game;
+//
+//- (id)initWithGame:(FCGame *)g;
 - (IBAction)startAgain:(id)sender;
 
 @end

@@ -10,12 +10,29 @@
 
 @implementation FCCard
 
-- (void)initWithQuestion:(NSString *)question
+- (id)initWithQuestion:(NSString *)question
                   answer: (NSString *)answer
             wrongAnswer1: (NSString *)wrongAnswer1
             wrongAnswer2: (NSString *)wrongAnswer2
 {
+    if (self = [super init])
+    {
+        self.cardText = question;
+        
+        self.answers = [[NSMutableArray alloc] init];
+        
+        [self.answers addObject:answer];
+        [self.answers addObject:wrongAnswer1];
+        [self.answers addObject:wrongAnswer2];
+        
+        int randomAnswerSlot = arc4random() % 3;
+       
+        [self.answers exchangeObjectAtIndex:0 withObjectAtIndex:randomAnswerSlot];
+        
+        self.correctAnswers = randomAnswerSlot;
+    }
     
+    return self;
 }
 
 - (void)recordAnswer:(int)answerNum

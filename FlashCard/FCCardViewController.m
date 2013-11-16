@@ -35,10 +35,10 @@
 }
 
 
-- (id)initWithGame:(FCGame *)g
-{
-    
-}
+//- (id)initWithGame:(FCGame *)g
+//{
+//    
+//}
 
 - (void)nextCard
 {

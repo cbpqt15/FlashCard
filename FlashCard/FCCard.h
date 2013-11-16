@@ -15,9 +15,9 @@
 @property (nonatomic, strong) NSMutableArray *answers;
 @property (nonatomic) int correctAnswers;
 
-- (void)initWithQuestion:(NSString *)question
+- (id)initWithQuestion:(NSString *)question
                   answer: (NSString *)answer
-            wrongAnswer1: (NSString *)wrongAnswer1
+            wrongAnswer1: (NSString *)wrongAnswer1  
             wrongAnswer2: (NSString *)wrongAnswer2;
 
 - (void)recordAnswer:(int)answerNum;
