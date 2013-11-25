@@ -7,6 +7,7 @@
 //
 
 #import "FCViewController.h"
+#import "FCGame.h"
 
 
 @interface FCViewController ()
@@ -15,14 +16,6 @@
 
 @implementation FCViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
@@ -35,25 +28,24 @@
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)showCards:(NSMutableArray *)cards
+-(IBAction)showCards:(NSMutableArray*)cards
 {
-    FCGame *game = [[FCGame alloc] initWithcards:cards];
     
+    FCGame *game = [[FCGame alloc] initWithCards:cards];
+        
     self.cardVC = [[FCCardViewController alloc] initWithGame:game];
     
     [self.view.window addSubview:self.cardVC.view];
 }
 
-- (IBAction)showStates:(id)sender
-{
-    FCAnswerKey *key = [[FCAnswerKey alloc] init];
+-(IBAction)showStates:(id)sender {
+    FCAnswerKey* key = [[FCAnswerKey alloc] init];
     NSMutableArray *cards = [key allocStateCards];
     [self showCards:cards];
 }
 
-- (IBAction)showCapitals:(id)sender
-{
-    FCAnswerKey *key = [[FCAnswerKey alloc] init];
+-(IBAction)showCapitals:(id)sender {
+    FCAnswerKey* key = [[FCAnswerKey alloc] init];
     NSMutableArray *cards = [key allocCapitalCards];
     [self showCards:cards];
 }
